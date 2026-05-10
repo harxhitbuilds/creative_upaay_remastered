@@ -1,7 +1,7 @@
 "use client";
 
 import { gsap } from "gsap";
-import { ArrowUpRight, Instagram, Linkedin, Mail } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 import Link from "next/link";
 
 import { useRef } from "react";
