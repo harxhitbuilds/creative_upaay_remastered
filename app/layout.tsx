@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Host_Grotesk } from "next/font/google";
-import localFont from "next/font/local";
+import {
+  Host_Grotesk,
+  IBM_Plex_Mono,
+  Plus_Jakarta_Sans,
+  PT_Mono,
+} from "next/font/google";
 
 import { cn } from "@/lib/utils";
+import { LenisProvider } from "@/providers/lenis-provider";
+import ThemeProvider from "@/providers/theme.provider";
 
 import "./globals.css";
 
@@ -16,6 +22,13 @@ const hostGrotesk = Host_Grotesk({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-secondary",
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-tertiary",
 });
 
 export const metadata: Metadata = {
@@ -70,8 +83,22 @@ export default function RootLayout({
         plusJakartaSans.variable,
         hostGrotesk.variable,
       )}
+      suppressHydrationWarning
     >
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body
+        className={`${plusJakartaSans.variable} ${hostGrotesk.variable} ${ibmPlexMono.variable} bg-background text-foreground antialiased`}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <LenisProvider>
+            <main>{children}</main>
+          </LenisProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

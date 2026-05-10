@@ -8,8 +8,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --font-sans: var(--font-secondary);
-  --font-heading: var(--font-primary);
+  --font-primary: var(--font-primary);
+  --font-secondary: var(--font-secondary);
+  --font-tertiary: var(--font-tertiary);
 
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -124,21 +125,8 @@
     @apply border-border outline-ring/50;
   }
 
-  html {
-    font-family: var(--font-secondary);
-  }
-
   body {
     @apply bg-background text-foreground;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-primary);
   }
 }
 
@@ -148,5 +136,8 @@
   }
   .font-secondary {
     font-family: var(--font-secondary);
+  }
+  .font-tertiary {
+    font-family: var(--font-tertiary);
   }
 }
