@@ -88,16 +88,9 @@ export default function RootLayout({
       <body
         className={`${plusJakartaSans.variable} ${hostGrotesk.variable} ${ibmPlexMono.variable} bg-background text-foreground antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <LenisProvider>
-            <main>{children}</main>
-          </LenisProvider>
-        </ThemeProvider>
+        <LenisProvider>
+          <main>{children}</main>
+        </LenisProvider>
       </body>
     </html>
   );

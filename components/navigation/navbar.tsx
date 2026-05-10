@@ -106,7 +106,6 @@ export default function Navbar() {
               className="object-contain"
             />
           </Link>
-          <ModeToggleButton />
         </div>
 
         <div className="flex items-center gap-16">
@@ -164,16 +163,16 @@ export default function Navbar() {
           Close
         </button>
 
-        <div className="max-w-8xl mx-auto mt-24 grid w-full flex-1 grid-cols-1 gap-16 px-8 md:px-16 lg:grid-cols-2 lg:gap-8">
+        <div className="max-w-8xl overflow-scrol mx-auto mt-12 grid w-full flex-1 grid-cols-1 gap-16 px-8 md:px-16 lg:grid-cols-2 lg:gap-8">
           <div className="flex h-full flex-col justify-between">
             <div className="space-y-2">
               <div className="overflow-hidden">
-                <h2 className="talk-text-reveal font-primary translate-y-full text-6xl leading-[0.85] font-extrabold tracking-tighter uppercase opacity-0 md:text-8xl lg:text-9xl">
+                <h2 className="talk-text-reveal font-primary translate-y-full text-6xl leading-[0.85] font-extrabold tracking-tighter uppercase opacity-0 md:text-8xl lg:text-8xl">
                   Let's Work
                 </h2>
               </div>
               <div className="overflow-hidden">
-                <h2 className="talk-text-reveal font-primary translate-y-full text-6xl leading-[0.85] font-extrabold tracking-tighter uppercase opacity-0 md:text-8xl lg:text-9xl">
+                <h2 className="talk-text-reveal font-primary translate-y-full text-6xl leading-[0.85] font-extrabold tracking-tighter uppercase opacity-0 md:text-8xl lg:text-8xl">
                   Together
                 </h2>
               </div>
@@ -269,7 +268,7 @@ export default function Navbar() {
                 <p className="font-tertiary text-muted-foreground max-w-[250px] text-xs leading-relaxed">
                   By clicking on "Send", you accept our policy.
                 </p>
-                <button className="font-primary hover:border-foreground border-b-2 border-transparent pb-1 text-3xl font-bold transition-all duration-300 hover:italic md:text-5xl">
+                <button className="font-primary hover:border-foreground border-b-2 border-transparent pb-1 text-3xl font-bold transition-all duration-300 hover:italic md:text-2xl">
                   Send Message ↗
                 </button>
               </div>

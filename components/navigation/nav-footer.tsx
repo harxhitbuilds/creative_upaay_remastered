@@ -30,7 +30,7 @@ export default function NavFooter() {
   }, []);
 
   return (
-    <nav className="pointer-events-none fixed bottom-0 left-0 z-40 flex w-full flex-col items-center justify-between gap-4 px-16 py-6 mix-blend-difference md:flex-row md:gap-0">
+    <nav className="pointer-events-none fixed bottom-0 left-0 z-40 flex w-full flex-col items-center justify-between gap-4 px-16 py-6 mix-blend-difference backdrop-blur-xs md:flex-row md:gap-0">
       <p className="font-tertiary text-xs tracking-widest text-zinc-400 uppercase md:text-xs">
         We craft bold design & clean Webflow
       </p>
